@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man - Marvel Heroes</title>
+    <style>
+        /* Modern reset and page styling */
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #0f172a; /* Dark modern background */
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Center the navigation container across the page */
+        .hero-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px 0;
+            display: flex;
+            gap: 15px; /* Spacing between buttons */
+            background: rgba(30, 41, 59, 0.7);
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Style the individual list items and links */
+        .hero-nav li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for the nav links */
+        .hero-nav li a:hover {
+            background-color: #ef4444; /* Marvel Red */
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #f8fafc;
+            margin-top: 0;
+            border-bottom: 3px solid #ef4444;
+            padding-bottom: 10px;
+        }
+
+        h2, h3 {
+            color: #f1f5f9;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        /* Video Responsive Wrapper */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #f8fafc;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        /* Movies List Styling */
+        ol {
+            padding-left: 20px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        ol li {
+            margin-bottom: 8px;
+        }
+
+        /* External Links */
+        a:not(.hero-nav a) {
+            color: #38bdf8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:not(.hero-nav a):hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered Navigation Bar -->
+    <ul class="hero-nav">
+        <li><a href="ironman.html">IRON MAN</a></li>
+        <li><a href="capt%20america.html">CAPTAIN AMERICA</a></li>
+        <li><a href="spiderman.html">SPIDERMAN</a></li>
+        <li><a href="hulk.html">Hulk</a></li>
+        <li><a href="marvle.html">Marvel Home</a></li>
+    </ul>
+
+    <!-- Main Content Wrapper -->
+    <div class="container">
+        <h1>Iron Man</h1>
+        
+        <!-- Responsive Video Container -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/t86sKsR4pnk?si=XFLQwwjMhl3XP8kB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <p>Iron Man is a superhero appearing in American comic books published by Marvel Comics. Co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby, the character first appeared in Tales of Suspense #39 in 1963, and received his own title with Iron Man #1 in 1968. Shortly after his creation, Iron Man was a founding member of a superhero team, the Avengers, with Thor, Ant-Man, Wasp and the Hulk. Iron Man stories, individually and with the Avengers, have been published consistently since the character's creation.</p>
+
+        <p>Iron Man is the superhero persona of Anthony Edward "Tony" Stark, a businessman and engineer who runs the company Stark Industries. Beginning his career as a weapons manufacturer, he is captured in a war zone, and his heart is severely injured by shrapnel. To sustain his heart and escape his captors, he builds a technologically advanced armor. After escaping, he continues using the armor as a superhero, creating more advanced models that grant him superhuman strength, flight, energy projection, and other abilities. The character was used to explore political themes, and early Iron Man stories were set in the Cold War. Later stories explored other themes, such as civil unrest, technological advancement, corporate espionage, alcoholism, and governmental authority.</p>
+
+        <p>Major Iron Man stories include Demon in a Bottle (1979), Armor Wars (1987–1988), Extremis (2005), and Iron Man 2020 (2020). He is also a leading character in the company-wide stories Civil War (2006–2007), Dark Reign (2008–2009), and Civil War II (2016). Iron Man's supporting cast has produced additional superhero characters, including James Rhodes as War Machine, Pepper Potts as Rescue, and Riri Williams as Ironheart as well as reformed villains Black Widow and Hawkeye. Iron Man's list of enemies includes his archenemy, the Mandarin, as well as many supervillains of communist origin and many that double as business rivals for Stark.</p>
+        
+        <p>Robert Downey Jr. portrayed Tony Stark in Iron Man (2008), the first film of the Marvel Cinematic Universe, and continued to portray the character until his final appearance in Avengers: Endgame (2019). Downey's portrayal popularized the character, elevating Iron Man as one of Marvel's most recognizable superheroes.</p>
+        
+        <!-- Fixed Table Structure -->
+        <table>
+            <tr>
+                <th colspan="2">Team Affiliations</th>
+            </tr>
+            <tr>
+                <td>Avengers</td>
+                <td>Department of Defense</td>
+            </tr>
+            <tr>
+                <td>New Avengers</td>
+                <td>Guardians of the Galaxy</td>
+            </tr>
+            <tr>
+                <td>Illuminati</td>
+                <td>Mighty Avengers</td>
+            </tr>
+            <tr>
+                <td>S.H.I.E.L.D.</td>
+                <td>Stark Industries</td>
+            </tr>
+        </table>
+
+        <h2>Movies</h2>
+        <ol>
+            <li>The Invincible Iron Man</li>
+            <li>Iron Man (2008)</li>
+            <li>Iron Man 2 (2010)</li>
+            <li>Iron Man: Rise of Technovore</li>
+            <li>Iron Man 3 (2013)</li>
+            <li>Anime Confidential: Black Widow and Punisher</li>
+            <li>Avengers: Age of Ultron</li>
+            <li>Captain America: Civil War</li>
+            <li>Avengers: Infinity War</li>
+            <li>Avengers: Endgame</li>
+        </ol>
+
+        <h3>Iron Man's Death</h3>
+        <p>During <strong>October 17, 2023,</strong> Tony Stark sacrificed his life to defeat Thanos and thus save the universe from the Mad Titan, who sought to defeat The Avengers of the present after having done so in the past.</p>
+        
+        <p><a href="https://en.as.com/meristation/news/tony-stark-iron-man-dies-today-at-53-years-old-fighting-alongside-the-avengers-n/" target="_blank">Read more about the Death of Iron Man &rarr;</a></p>
+    </div>
+
+</body>
+</html>

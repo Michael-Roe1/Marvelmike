@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Heroes - Home</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #0f172a; 
+            color: #cbd5e1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        .hero-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px 0;
+            display: flex;
+            gap: 15px; /
+            background: rgba(30, 41, 59, 0.7);
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        
+        .hero-nav li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        
+        .hero-nav li a:hover {
+            background-color: #ef4444; 
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+        }
+
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        
+        .watermark {
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #f8fafc;
+            margin-top: 0;
+            border-bottom: 3px solid #ef4444;
+            padding-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2, h3, p, table, ul, ol {
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #f8fafc;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        
+        ul.genres-list, ol.heroes-list {
+            padding-left: 20px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul.genres-list li, ol.heroes-list li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <ul class="hero-nav">
+        <li><a href="ironman.html">IRON MAN</a></li>
+        <li><a href="capt%20america.html">CAPTAIN AMERICA</a></li>
+        <li><a href="spiderman.html">SPIDERMAN</a></li>
+        <li><a href="hulk.html">Hulk</a></li>
+        <li><a href="marvle.html">HOME PAGE</a></li>
+    </ul>
+
+   
+    <div class="container">
+        
+        <div class="watermark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Impact, Arial Black" font-size="90" fill="#e62429">MARVEL</text>
+            </svg>
+        </div>
+
+        <h1>Marvel Heroes</h1>
+
+        <p>Marvel Comics is an American comic book publisher and the property of The Walt Disney Company since December 31, 2009, and a subsidiary of Disney Publishing Worldwide since March 2023. Marvel was founded in 1939 by Martin Goodman as Timely Comics, and by 1951 had generally become known as Atlas Comics.</p>
+
+        <table>
+            <tr>
+                <th>Founder/Writer</th>
+                <th>Organization</th>
+                <th>Founded</th>
+                <th>Headquarters</th>
+            </tr>
+            <tr>
+                <td>Martin Goodman</td>
+                <td>Marvel Entertainment</td>
+                <td>1939</td>
+                <td>New York, NY</td>
+            </tr>
+            <tr>
+                <td>Stan Lee</td>
+                <td>Disney</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <h2>Fiction Genres</h2>
+        <ul class="genres-list" style="list-style-type: disc;">
+            <li>Superhero</li>
+            <li>Science fiction</li>
+            <li>Fantasy</li>
+            <li>Action & Adventure</li>
+        </ul>
+
+        <p>Marvel counts among its characters such well-known superheroes as:</p>
+
+        <ol class="heroes-list">
+            <li>Spider-Man</li>
+            <li>Iron Man</li>
+            <li>Captain America</li>
+            <li>Thor</li>
+            <li>Doctor Strange</li>
+            <li>Hulk</li>
+            <li>Daredevil</li>
+            <li>Wolverine</li>
+            <li>Black Panther</li>
+            <li>Captain Marvel</li>
+        </ol>
+
+        <p>as well as popular superhero teams such as the Avengers, X-Men, Fantastic Four, and Guardians of the Galaxy.</p>
+    </div>
+
+</body>
+</html>
+
+  
